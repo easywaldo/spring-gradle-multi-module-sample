@@ -8,10 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan(basePackageClasses = {MemberController.class, MemberService.class})
 @SpringBootApplication
-public class ModuleWebApplication {
+public class FrontModuleWebApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ModuleWebApplication.class, args);
+        SpringApplication.run(FrontModuleWebApplication.class, args);
     }
 
 }

@@ -4,5 +4,5 @@ pluginManagement {
     }
 }
 rootProject.name = 'multiweb'
-include 'module-common', 'module-api', 'module-web'
+include 'module-common', 'front-api', 'module-web'
 

@@ -29,7 +29,7 @@ subprojects {
     }
 }
 
-project(':module-api') {
+project(':front-api') {
     dependencies {
         implementation project(':module-common')
     }
@@ -37,7 +37,7 @@ project(':module-api') {
 
 project(':module-web') {
     dependencies {
-        implementation project(':module-api')
+        implementation project(':front-api')
         implementation project(':module-common')
     }
 }

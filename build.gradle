@@ -38,6 +38,7 @@ project(':front-api') {
 project(':module-web') {
     dependencies {
         implementation project(':front-api')
+        implementation project(':admin-api')
         implementation project(':module-common')
     }
 }

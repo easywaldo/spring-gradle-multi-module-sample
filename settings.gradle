@@ -1,0 +1,8 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+    }
+}
+rootProject.name = 'multiweb'
+include 'module-common', 'module-api', 'module-web'
+

@@ -9,9 +9,17 @@ repositories {
     mavenCentral()
 }
 
+bootJar {
+    enabled = false
+}
+jar {
+    enabled = true
+}
 dependencies {
     implementation 'org.projectlombok:lombok:1.18.18'
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 test {

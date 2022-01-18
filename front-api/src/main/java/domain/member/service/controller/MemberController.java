@@ -23,7 +23,6 @@ public class MemberController {
 
     @GetMapping(value = "/register/{userId}")
     public Long registerMember(@PathVariable String userId) {
-        return memberService.getSampleMember();
-        //return this.memberService.registerMember(userId);
+        return this.memberService.registerMember(userId);
     }
 }

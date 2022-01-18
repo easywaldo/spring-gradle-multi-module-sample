@@ -1,6 +1,10 @@
 package domain.member.service;
 
+import domain.member.entity.Member;
+import domain.member.repository.MemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class MemberService {
@@ -9,7 +13,7 @@ public class MemberService {
         return 999L;
     }
 
-    /*private final MemberRepository memberRepository;
+    private final MemberRepository memberRepository;
 
     @Autowired
     public MemberService(MemberRepository memberRepository) {
@@ -18,9 +22,8 @@ public class MemberService {
 
     @Transactional
     public Long registerMember(String userId) {
-        //var member = new Member(userId);
-       // var result = this.memberRepository.save(Member.builder().userId(userId).build());
-        //return memberRepository.save(member).getSeqNo();
-        return 0L;
-    }*/
+        var member = new Member(userId);
+        var result = this.memberRepository.save(member);
+        return result.getSeqNo();
+    }
 }

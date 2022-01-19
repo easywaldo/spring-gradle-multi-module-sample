@@ -1,4 +1,4 @@
-package com.example.moduleweb;
+package com.example.moduleweb.admin;
 
 
 import org.springframework.boot.SpringApplication;

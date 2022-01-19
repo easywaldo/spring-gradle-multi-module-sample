@@ -1,3 +1,13 @@
+springBoot {
+    mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
+}
+bootJar {
+    enabled = true
+    mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
+}
+jar {
+    enabled = true
+}
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

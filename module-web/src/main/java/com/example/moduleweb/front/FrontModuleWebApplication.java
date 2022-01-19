@@ -1,4 +1,4 @@
-package com.example.moduleweb;
+package com.example.moduleweb.front;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

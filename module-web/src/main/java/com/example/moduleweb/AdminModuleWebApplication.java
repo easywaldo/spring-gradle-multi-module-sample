@@ -1,13 +1,15 @@
 package com.example.moduleweb;
 
 
-import admin.member.controller.MemberController;
-import admin.member.service.MemberService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackageClasses = {MemberController.class, MemberService.class})
+@EntityScan(basePackages = {"domain"})
+@EnableJpaRepositories(basePackages = {"domain"})
+@ComponentScan(basePackages = {"admin"})
 @SpringBootApplication
 public class AdminModuleWebApplication {
     public static void main(String[] args) {

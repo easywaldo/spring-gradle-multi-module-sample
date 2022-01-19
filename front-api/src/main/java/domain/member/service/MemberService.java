@@ -8,12 +8,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class MemberService {
+    private final MemberRepository memberRepository;
 
     public Long getSampleMember() {
         return 999L;
     }
-
-    private final MemberRepository memberRepository;
 
     @Autowired
     public MemberService(MemberRepository memberRepository) {

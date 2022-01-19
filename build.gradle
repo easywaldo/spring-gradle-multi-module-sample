@@ -36,6 +36,13 @@ project(':front-api') {
     }
 }
 
+project(':admin-api') {
+    dependencies {
+        implementation project(':module-common')
+        implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    }
+}
+
 project(':module-web') {
     dependencies {
         implementation project(':front-api')

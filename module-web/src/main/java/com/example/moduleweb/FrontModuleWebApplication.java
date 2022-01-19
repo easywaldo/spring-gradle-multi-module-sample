@@ -1,7 +1,7 @@
 package com.example.moduleweb;
 
 import domain.member.service.MemberService;
-import domain.member.service.controller.MemberController;
+import domain.member.controller.MemberController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;

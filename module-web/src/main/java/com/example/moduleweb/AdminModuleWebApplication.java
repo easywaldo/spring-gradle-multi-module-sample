@@ -1,8 +1,8 @@
 package com.example.moduleweb;
 
 
-import admin.member.MemberController;
-import admin.member.MemberService;
+import admin.member.controller.MemberController;
+import admin.member.service.MemberService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;

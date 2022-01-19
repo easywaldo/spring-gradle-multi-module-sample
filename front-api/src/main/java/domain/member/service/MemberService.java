@@ -26,4 +26,9 @@ public class MemberService {
         var result = this.memberRepository.save(member);
         return result.getSeqNo();
     }
+
+    @Transactional(readOnly = true)
+    public Member findMember(Long memberSeq) {
+        return this.memberRepository.findById(memberSeq).orElse(Member.builder().build());
+    }
 }

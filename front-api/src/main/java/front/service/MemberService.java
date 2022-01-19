@@ -1,4 +1,4 @@
-package domain.member.service;
+package front.service;
 
 import domain.member.entity.Member;
 import domain.member.repository.MemberRepository;

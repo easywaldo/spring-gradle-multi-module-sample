@@ -1,6 +1,6 @@
-package domain.member.controller;
+package front.controller;
 
-import domain.member.service.MemberService;
+import front.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

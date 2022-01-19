@@ -8,7 +8,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EntityScan(basePackages = {"domain"})
 @EnableJpaRepositories(basePackages = {"domain"})
-@ComponentScan(basePackages = {"domain"})
+@ComponentScan(basePackages = {"front"})
 @SpringBootApplication
 public class FrontModuleWebApplication {
 

@@ -38,3 +38,5 @@ java -jar .\front-web-server.jar -Dspring.server.port=8099
 java -jar .\admin-web-server.jar -Dspring.server.port=8098
 ```
 
+##### 참고문서
+https://perfectacle.github.io/2017/09/23/Spring-boot-gradle-profile/

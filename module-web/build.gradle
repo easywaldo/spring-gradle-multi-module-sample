@@ -1,17 +1,23 @@
-springBoot {
-    mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
-}
-bootJar {
-    enabled = true
-    mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
-}
-jar {
-    enabled = true
-}
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'com.h2database:h2'
+}
+
+tasks.jar {
+    enabled = false
+}
+
+//gradle bootJar -Pprofile=front 로 bootJar 명령 실행
+tasks.bootJar {
+    enabled = true
+    ext.profile = (!project.hasProperty('profile') || !profile) ? 'admin' : profile
+    if (ext.profile == 'admin') {
+        mainClassName = "com.example.moduleweb.admin.AdminModuleWebApplication"
+    }
+    else {
+        mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
+    }
 }

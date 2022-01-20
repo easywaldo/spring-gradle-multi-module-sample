@@ -16,8 +16,10 @@ tasks.bootJar {
     ext.profile = (!project.hasProperty('profile') || !profile) ? 'admin' : profile
     if (ext.profile == 'admin') {
         mainClassName = "com.example.moduleweb.admin.AdminModuleWebApplication"
+        archiveFileName = "admin-web-server.jar"
     }
     else {
         mainClassName = "com.example.moduleweb.front.FrontModuleWebApplication"
+        archiveFileName = "front-web-server.jar"
     }
 }
